@@ -1,7 +1,7 @@
 module.exports = {
   solidity: "0.8.20",
   paths: {
-    sources: "src",
+    sources: "contracts",
   },
   networks: {
     // for Sepolia testnet
