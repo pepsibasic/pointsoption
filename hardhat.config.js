@@ -1,7 +1,10 @@
+require("@nomiclabs/hardhat-waffle");
+require("dotenv").config();
+
 module.exports = {
   solidity: "0.8.20",
   paths: {
-    sources: "contracts",
+    sources: "./contracts",
   },
   networks: {
     // for Sepolia testnet
@@ -13,7 +16,7 @@ module.exports = {
     // for local dev environment
     "blast-local": {
       url: "http://localhost:8545",
-      accounts: [process.env.PRIVATE_KEY],
+      accounts: [process.env.PRIVATE_KEY],W
       gasPrice: 1000000000,
     },
   },
